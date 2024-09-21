@@ -8,7 +8,18 @@ void reverse(int arr[], int n)
         swap(arr[i], arr[n - i - 1]);
     }
 }
-
+void minNum(int arr[], int n)
+{
+    int minVal = arr[0];  // Assume the first element is the min
+    for (int i = 1; i < n; i++)  // Start checking from the second element
+    {
+        if (arr[i] < minVal) 
+        {
+            minVal = arr[i];
+        }
+    }
+    cout << "Minimum number: " << minVal << endl;
+}
 //Finding max number in the array
 void maxNum(int arr[], int n)
 {
