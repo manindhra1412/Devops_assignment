@@ -22,6 +22,11 @@ void maxNum(int arr[], int n)
     }
     cout << "Maximum number: " << maxVal << endl;
 }
+void print(int arr[], int n){
+    for(int i=0;i<n;i++){
+        cout<<"Array is"<< arr[i];
+    }
+}
 
 int main()
 {
