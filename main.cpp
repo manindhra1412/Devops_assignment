@@ -60,3 +60,6 @@ int main()
     }
     return 0;
 }
+void sortAscending(int arr[], int n) {
+    sort(arr, arr + n);  // Sorting the array in ascending order
+}
