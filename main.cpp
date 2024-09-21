@@ -39,6 +39,16 @@ void print(int arr[], int n){
     }
 }
 
+//Sum Of All Elements in An Array
+int sumOfArray(int arr[], int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++) { // iterate through every element in an array
+        sum += arr[i];   // Add every element
+    }
+    return sum;
+}
+
+
 int main()
 {
     int n = 6;
