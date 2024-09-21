@@ -9,6 +9,19 @@ void reverse(int arr[], int n)
     }
 }
 
+//Finding max number in the array
+void maxNum(int arr[], int n)
+{
+    int maxVal = arr[0];  // Assume the first element is the max
+    for (int i = 1; i < n; i++)  // Start checking from the second element
+    {
+        if (arr[i] > maxVal) 
+        {
+            maxVal = arr[i];
+        }
+    }
+    cout << "Maximum number: " << maxVal << endl;
+}
 void print(int arr[], int n){
     for(int i=0;i<n;i++){
         cout<<"Array is"<< arr[i];
