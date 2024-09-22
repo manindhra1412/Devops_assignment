@@ -63,3 +63,7 @@ int main()
 void sortAscending(int arr[], int n) {
     sort(arr, arr + n);  // Sorting the array in ascending order
 }
+
+void sortAscending(int arr[], int n) {
+    std::sort(arr, arr + n); // Sorting the array in ascending order
+}
