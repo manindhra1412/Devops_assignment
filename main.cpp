@@ -47,7 +47,18 @@ int sumOfArray(int arr[], int n) {
     }
     return sum;
 }
+//multiplication of all elements in an array
+int multiplyArray(int arr[], int n) {
+    int product = 1;
+    for (int i = 0; i < n; i++) {
+        product *= arr[i];
+    }
+    return product;
+}
 
+void sortAscending(int arr[], int n) {
+    sort(arr, arr + n);  // Sorting the array in ascending order
+}
 
 int main()
 {
@@ -59,7 +70,4 @@ int main()
         cout << i << endl;
     }
     return 0;
-}
-void sortAscending(int arr[], int n) {
-    sort(arr, arr + n);  // Sorting the array in ascending order
 }
