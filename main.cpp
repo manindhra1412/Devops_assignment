@@ -56,7 +56,9 @@ int multiplyArray(int arr[], int n) {
     return product;
 }
 
-
+void sortAscending(int arr[], int n) {
+    sort(arr, arr + n);  // Sorting the array in ascending order
+}
 
 int main()
 {
