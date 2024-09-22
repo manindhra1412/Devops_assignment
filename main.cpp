@@ -66,9 +66,26 @@ void descending(int arr[], int size) {
                 arr[j] = temp;
             }
         }
+    }
 }
 void sortAscending(int arr[], int n) {
     sort(arr, arr + n);  // Sorting the array in ascending order
+}
+
+
+vector<int> findDuplicates(const vector<int>& arr) {
+    unordered_set<int> seen;
+    unordered_set<int> duplicates;
+
+    for (int item : arr) {
+        if (seen.find(item) != seen.end()) {
+            duplicates.insert(item);
+        } else {
+            seen.insert(item);
+        }
+    }
+
+    return vector<int>(duplicates.begin(), duplicates.end());
 }
 
 int main()
