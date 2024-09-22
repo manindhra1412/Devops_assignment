@@ -67,3 +67,39 @@ void sortAscending(int arr[], int n) {
 void sortAscending(int arr[], int n) {
     std::sort(arr, arr + n); // Sorting the array in ascending order
 }
+void (int arr[], int n) {
+    int left = 0, right = n - 1;
+
+    while (left < right) {
+        // Increment left index while we see an even number at left
+        while (arr[left] % 2 == 0 && left < right) {
+            left++;
+        }
+        // Decrement right index while we see an odd number at right
+        while (arr[right] % 2 == 1 && left < right) {
+            right--;
+        }
+        // Swap left and right elements
+        if (left < right) {
+            std::swap(arr[left], arr[right]);
+        }
+    }
+}
+void Rearrangement_of_Numbersrrang(int arr[], int n) {
+    int left = 0, right = n - 1;
+
+    while (left < right) {
+        // Increment left index while we see an even number at left
+        while (arr[left] % 2 == 0 && left < right) {
+            left++;
+        }
+        // Decrement right index while we see an odd number at right
+        while (arr[right] % 2 == 1 && left < right) {
+            right--;
+        }
+        // Swap left and right elements
+        if (left < right) {
+            std::swap(arr[left], arr[right]);
+        }
+    }
+}
